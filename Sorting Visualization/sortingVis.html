@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sorting Visualization</title>
+  <link rel="stylesheet" href="sortingVis.css" />
+</head>
+<body>
+  <header>
+    <h1>SORTING VISUALIZER</h1>
+  </header>
+
+  <div class="container">
+    <div class="arrayBlock">
+      <div>
+        <h3>Array Size</h3>
+        <input type="range" id="changeSize" min="10" max="80" step="1" value="20">
+      </div>
+
+      <div class="speed">
+        <h3>Speed</h3>
+        <input type="range" id="changeSpeed" min="1" max="5" step="1" value="3">
+      </div>
+
+      <div>
+        <button id="a_generate">Generate New Array</button>
+      </div>
+    </div>
+
+    <div class="sortMethods">
+      <button>Selection Sort</button>
+      <button>Bubble Sort</button>
+      <button>Quick Sort</button>
+      <button>Insertion Sort</button>
+    </div>
+  </div>
+
+  <section>
+    <div id="description">
+      <div class="desc1">
+        No.of Boxes :
+        <div id="arrayNo">20</div>
+
+        <div class="desc2">
+          Speed :
+          <div id="arSpeed">100</div> X
+        </div>
+      </div>
+    </div>
+
+    <div id="array_container"></div>
+  </section>
+
+  <footer>
+    <div id="foot">Created by Harsh Singh</div>
+  </footer>
+
+  <script src="sortingVis.js"></script>
+  <script src="vis.js"></script>
+  <script src="bubble.js"></script>
+  <script src="selectionSort.js"></script>
+  <script src="insertionSort.js"></script>
+  <script src="quickSort.js"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: "Cambria", "Times New Roman", serif;
+  background: black;
+  color: #d8c8eb;
+}
+
+/* header */
+header h1 {
+  text-align: center;
+  font-size: 36px;
+  padding: 12px 0;
+  color: #e6d6fb;
+}
+
+/* top controls */
+.container {
+  display: flex;
+  gap: 20px;
+  padding: 12px 24px;
+  align-items: flex-start;
+}
+
+.arrayBlock {
+  width: 270px;
+  background: linear-gradient(180deg,#000,#120017);
+  padding: 12px;
+  border-radius: 6px;
+}
+
+.arrayBlock h3 { color: #d8c8eb; margin-bottom: 6px; font-size: 16px; }
+.arrayBlock input { width: 100%; margin-bottom: 10px; }
+.arrayBlock button {
+  width: 100%;
+  padding: 8px;
+  background: #d8c8eb;
+  color: #2b1b3d;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* sorting buttons row */
+.sortMethods {
+  flex: 1;
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  justify-content: center;
+  padding-top: 6px;
+}
+
+.sortMethods button {
+  padding: 10px 34px;
+  background: #e4d4f8;
+  border: none;
+  border-radius: 10px;
+  color: #2b1b3d;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* main section */
+section {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+  align-items: stretch;
+}
+
+/* description (left) */
+#description {
+  width: 260px;
+  padding: 24px;
+  background: linear-gradient(180deg, #000, #210022);
+  font-size: 18px;
+  font-weight: bold;
+  border-right: 6px solid #120017;
+}
+
+.desc1 { margin-top: 20px; }
+.desc2 { margin-top: 28px; }
+
+/* array container */
+#array_container {
+  flex: 1;
+  height: 420px;
+  background: white;
+  margin-right: 24px;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  overflow: hidden;
+  padding: 24px;
+}
+
+/* bars */
+.bar {
+  background: #260022;
+  margin: 0 3px;
+  transition: height 0.18s ease, background-color 0.18s ease;
+  border-radius: 2px;
+  display: inline-block;
+}
+
+/* footer */
+footer {
+  background: linear-gradient(180deg,#000,#120017);
+  color: #d8c8eb;
+  text-align: center;
+  padding: 10px;
+  margin-top: 18px;
+}
